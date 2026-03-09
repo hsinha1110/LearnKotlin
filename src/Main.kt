@@ -76,8 +76,8 @@ fun main() {
 //    println(hasTicket && hasFriends)
 //    println(hasTicket || hasFriends)
 
-    val age = 15
-    val votersAge = 19
+//    val age = 15
+//    val votersAge = 19
 
 //    if (votersAge >= 18) {
 //        println("voter is eligible")
@@ -87,40 +87,105 @@ fun main() {
 //    }
 //
 //    while loop
-    var battery = 5
-    while (battery > 0) {
-        println("Scrolling Instagram Battery left $battery")
-        battery--
-    }
-    println("Battery Dead")
+//    var battery = 5
+//    while (battery > 0) {
+//        println("Scrolling Instagram Battery left $battery")
+//        battery--
+//    }
+//    println("Battery Dead")
+//
+//    // do while -> first
+//    val hasTime = false
+//
+//    do {
+//        println("Game Played")
+//    } while (hasTime)
+//
+//    val number = 5
+//
+//    do {
+//        println("Number is $number")
+//    } while (number < 3)
+//
+//    var attempt = 1
+//
+//    do {
+//        println("Attempt is $attempt")
+//        attempt++
+//    } while (attempt <= 3)
+//
+//    // for loop -> no of iterations known
+//    val myName = "Himanshu"
+//    for (i in 1..20) {
+//        println("My name is $myName - $i")
+//    }
+//
+//    calculateMarks(math = 90, english = 80, hindi = 70)
+//    orderItem(item = "Iphone 17", quantity = 1)
+//    orderItem(item = "Samsung Galaxy s26", quantity = 2)
+//    calculatePercentage(84, 100)
+//    greet()
+//    greet("Himanshu")
+//    greet("Himanshu", lastName = "Sinha")
+//    add(11)
+//    add(num1 = 11, num2 = 12)
 
-    // do while -> first
-    val hasTime = false
-
-    do {
-        println("Game Played")
-    } while (hasTime)
-
-    val number = 5
-
-    do {
-        println("Number is $number")
-    } while (number < 3)
-
-    var attempt = 1
-
-    do {
-        println("Attempt is $attempt")
-        attempt++
-    } while (attempt <= 3)
-
-    // for loop -> no of iterations known
-    val myName = "Himanshu"
-    for (i in 1..20) {
-        println("My name is $myName - $i")
-    }
-
-}
 // while loop → Condition pehle check hoti hai, agar true ho to loop chalta hai.
 // do-while loop → Loop pehle ek baar chalta hai, condition baad me check hoti hai.
 // for loop → Jab iterations ki exact count pata ho tab use hota hai.
+
+// function
+// parameters -> like placeholder
+// arguments -> actual values
+//fun calculateMarks(math: Int, english: Int, hindi: Int) {
+//    val total = math + english + hindi
+//
+//    println("Total is $total")
+//}
+//
+//
+//fun orderItem(item: String, quantity: Int) {
+//    println("Item is $item Quantity is $quantity")
+//}
+//
+//fun calculatePercentage(marks: Int, totalMarks: Int): Float {
+//    return (marks.toFloat() / totalMarks.toFloat())
+//}
+//
+//// function overloading -> same name different parameter
+//fun greet() {
+//    println("Hello")
+//}
+//
+//fun greet(firstName: String) {
+//    println("Hello firstName is $firstName")
+//}
+//
+//fun greet(firstName: String, lastName: String) {
+//    println("Hello  firstName is $firstName and lastName is  $lastName")
+//}
+//
+//fun add(num1: Int) {
+//    println("The add is $num1")
+//}
+//
+//fun add(num1: Int, num2: Int) {
+//    println("The add is $num1 and $num2")
+//}
+
+    // Arrays
+    var marks = arrayOf(85, 90, 75, 64, 66)
+//    println("${marks[0]}")
+//    println("${marks[1]}")
+//    println("${marks[2]}")
+
+    var menu = arrayOf("John", "Peter", "Mary")
+
+    for (i in menu) {
+        println(i)
+    }
+
+    for(j in marks){
+        println(j)
+    }
+}
