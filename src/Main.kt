@@ -174,18 +174,57 @@ fun main() {
 //}
 
     // Arrays
-    var marks = arrayOf(85, 90, 75, 64, 66)
+//    var marks = arrayOf(85, 90, 75, 64, 66)
 //    println("${marks[0]}")
 //    println("${marks[1]}")
 //    println("${marks[2]}")
+//
+//    var menu = arrayOf("John", "Peter", "Mary")
+//
+//    for (i in menu) {
+//        println(i)
+//    }
+//
+//    for(j in marks){
+//        println(j)
+//    }
+    StudentInfo()
+    // oops
+}
 
-    var menu = arrayOf("John", "Peter", "Mary")
+class Student {
+    var name = ""
+    var rollNo = ""
+}
 
-    for (i in menu) {
-        println(i)
-    }
+fun StudentInfo() {
+    var student1 = Student()
+    var student2 = Student()
 
-    for(j in marks){
-        println(j)
+    student1.name = "John"
+    student1.rollNo = "1"
+
+    student2.name = "Peter"
+    student2.rollNo = "2"
+
+    println("Student name: ${student1.name}")
+    println("Student rollno: ${student1.rollNo}")
+
+    println("Student name: ${student2.name}")
+    println("Student rollno: ${student2.rollNo}")
+}
+
+class Car {
+    var color = ""
+    var model = ""
+    var price = ""
+
+    fun Horn() {
+        println("${model} says beep beep ")
     }
 }
+
+fun Color(col: String) {
+    println("${col} green")
+}
+
