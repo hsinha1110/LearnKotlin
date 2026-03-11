@@ -1,23 +1,15 @@
-class Car(
-    var name: String,
-    var model: String,
-    var color: String,
-    var engine: String
-) {
+class Student {
+    var name = "Himanshu"
+    var rollNumber = "11"
 
-    fun horn() {
-        println("$model Beep Beep")
+    fun introduce() {
+        println("Student name is $name and Student roll is $rollNumber")
     }
 }
 
 fun main() {
 
-    val c1 = Car(
-        "Volvo",
-        "Fiat",
-        "Blue",
-        "Four Stroke"
-    )
+    var student = Student()
+    student.introduce()
 
-    c1.horn()
 }
