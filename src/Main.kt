@@ -1,19 +1,11 @@
-class Car {
-    // secondary constructor
-    var model: String
-    var year: Int
-
-    constructor(model: String, year: Int) {
-        this.model = model
-        this.year = year
-    }
-
-    fun horn() {
-        println("${model} ${year} Horn is Beep Beep Beep")
-    }
+// init block
+class Person(val name: String) {
+    init { println("This is first init block") }
+    init { println("This is second init block") }
+    init { println("This is third init block") }
 }
 
 fun main() {
-    var car = Car("BMW", 2026)
-    car.horn()
+    val person = Person("Geeks")
+    println("Name = ${person.name}")
 }
