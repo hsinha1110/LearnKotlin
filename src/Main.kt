@@ -1,15 +1,19 @@
-class Student {
-    var name = "Himanshu"
-    var rollNumber = "11"
+class Car {
+    // secondary constructor
+    var model: String
+    var year: Int
 
-    fun introduce() {
-        println("Student name is $name and Student roll is $rollNumber")
+    constructor(model: String, year: Int) {
+        this.model = model
+        this.year = year
+    }
+
+    fun horn() {
+        println("${model} ${year} Horn is Beep Beep Beep")
     }
 }
 
 fun main() {
-
-    var student = Student()
-    student.introduce()
-
+    var car = Car("BMW", 2026)
+    car.horn()
 }
